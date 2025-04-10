@@ -1,0 +1,95 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import { Image } from 'astro:assets';
+import lessar from '../assets/panda.png';
+import lessar2 from '../assets/panda2.png';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+	<header>
+		<h1>ひんやり冷蔵庫</h1>
+	</header>
+
+	<div class="Background">
+		<main>
+			<Card>
+				<h2>自己紹介</h2>
+				<p>くれです。</p>
+				<p>創作をしたり、絵を描いたりしています。</p>
+				<p>南極大陸やアラスカの風景、夕方の暗がりの雰囲気が好きです。</p>
+			</Card>
+
+			<Card>
+				<h2>自創作について</h2>
+				<p>Melt in Meltdownという創作をしています。</p>
+				<p>
+					詳しい内容は<a href="https://reizou23.notion.site/3ffbf24e34ce4492a60b389f7b957568?pvs=4">世界観</a>や<a
+						href="https://reizou23.notion.site/3687df462ecf46f2852f6dee56467248?v=53ee921096fc40eab026a7dc765fd251&pvs=4"
+						>人物の一覧</a
+					>などにあります。
+				</p>
+			</Card>
+
+			<Card>
+				<h2>SNS</h2>
+				<p>Misskey : <a href="https://misskey.io/@nikim">misskey.io/@nikim</a> <br />だいたいここにいます</p>
+
+				<p>xissmie : <a href="https://xissmie.xfolio.jp/@o_qu">xissmie.xfolio.jp/@o_qu</a><br />絵があります</p>
+
+				<p>Twitter : <a href="https://x.com/le_qI_23">@le_qI_23</a><br />落書きとか小ネタとか</p>
+			</Card>
+
+			<Card>
+				<h2>使っているサイト</h2>
+
+				<p>ホームページ : <a href="https://chuanqimeixi.wixsite.com/my-site">ひんやり冷蔵庫</a></p>
+
+				<p>xfolio : <a href="https://xfolio.jp/portfolio/o_qu">ひんやり冷蔵庫</a></p>
+
+				<p>pixiv : <a href="https://www.pixiv.net/users/42221049">pixiv</a></p>
+
+				<p>pixivFANBOX : <a href="https://o-qu.fanbox.cc/">pixivFANBOX</a></p>
+
+				<p>notion : <a href="https://reizou23.notion.site/eba0b80c9e45437bb74b37586c5fa930?pvs=4">reizou23</a></p>
+
+				<p>wavebox : <a href="https://wavebox.me/wave/br2773bv0d9w1kly/">wavebox</a></p>
+
+				<p>booth : <a href="https://reizou23.booth.pm/">ひんやり直送</a></p>
+			</Card>
+
+			<Card>
+				<h2>レッサーパンダ</h2>
+				<p>かわいい</p>
+				<Image src={lessar} alt="歩くレッサーパンダ" />
+				<Image src={lessar2} alt="並んで歩くレッサーパンダ" />
+			</Card>
+		</main>
+	</div>
+</Layout>
+
+<style>
+	body {
+		background-color: white;
+	}
+	main {
+		margin: 0 auto;
+		padding: 0.5em;
+		max-width: 1024px;
+	}
+	header {
+		text-align: center;
+	}
+	h2,
+	p {
+		margin: 0.3em;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+</style>
